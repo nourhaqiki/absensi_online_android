@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    FILE: network_security_config.xml
+    Note: Mengizinkan aplikasi untuk mengakses server lokal (HTTP) tanpa HTTPS.
+    Sangat berguna saat tahap pengembangan dengan server Laravel lokal (10.0.2.2).
+-->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">10.0.2.2</domain>
+        <domain includeSubdomains="true">192.168.1.100</domain>
+        <domain includeSubdomains="true">salary-prelaw-seclusion.ngrok-free.dev</domain>
+    </domain-config>
+</network-security-config>
